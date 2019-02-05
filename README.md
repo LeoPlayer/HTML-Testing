@@ -1,2 +1,9 @@
 # Software1
-Testing app branch
+##about the software
+
+chuck some `code` in like this;
+
+```swift
+var Fat = 10
+print(Fat)
+```
