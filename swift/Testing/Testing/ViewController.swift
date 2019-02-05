@@ -22,15 +22,6 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-    @IBAction func sceneOne(_ sender: Any) {
-        //go to scene 1
-    }
-    
-    @IBAction func adminEnter(_ sender: Any) {
-        if adminPassword.isEqual(to: 1234){
-            //go to somewhere
-        }
-    }
     
 }
 

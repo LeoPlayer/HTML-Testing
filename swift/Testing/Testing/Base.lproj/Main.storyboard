@@ -694,101 +694,64 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="tS8-pv-StS" kind="relationship" relationship="window.shadowedContentViewController" id="VHa-2b-1r2"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aNB-7w-noK">
+        <!--Tab View Controller-->
+        <scene sceneID="ANk-xL-m6Z">
             <objects>
-                <viewController id="fWj-dD-OAE" sceneMemberID="viewController">
-                    <view key="view" id="TK7-Sw-VDi">
+                <tabViewController id="tS8-pv-StS" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="N2D-C5-IrY"/>
+                        <tabViewItem identifier="" id="84V-ga-WFU"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="l5P-q4-yJp">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-Wq-wpt">
-                                <rect key="frame" x="119" y="246" width="193" height="48"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Scene One" id="JDe-Uj-cgV">
-                                    <font key="font" metaFont="system" size="40"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="bDE-Wq-wpt" firstAttribute="top" secondItem="TK7-Sw-VDi" secondAttribute="top" constant="6" id="HLF-UH-JZ3"/>
-                            <constraint firstItem="bDE-Wq-wpt" firstAttribute="leading" secondItem="TK7-Sw-VDi" secondAttribute="leading" constant="121" id="eYD-99-5LH"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="cSI-To-RyI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="tS8-pv-StS" id="mF2-tZ-mwr"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="l5P-q4-yJp" id="b2J-UJ-Pjl"/>
+                        <segue destination="J1T-Hf-hbS" kind="relationship" relationship="tabItems" id="Sey-3X-3kz"/>
+                        <segue destination="UC3-W4-ZWN" kind="relationship" relationship="tabItems" id="FJQ-CH-h64"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="k8T-Xu-Mp1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-430" y="670"/>
+            <point key="canvasLocation" x="-282" y="697"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <scene sceneID="pAY-eh-CE2">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Testing" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="J1T-Hf-hbS" sceneMemberID="viewController">
+                    <view key="view" id="8Q1-8G-tBj">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T3Z-3E-rj9">
-                                <rect key="frame" x="194" y="175" width="78" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="roundTextured" title="Scene one" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vk2-aT-uNl">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="sceneOne:" target="XfG-lQ-9wD" id="p78-Gb-wM7"/>
-                                    <segue destination="fWj-dD-OAE" kind="popover" popoverAnchorView="T3Z-3E-rj9" popoverBehavior="t" preferredEdge="maxY" id="IEg-WA-a9g"/>
-                                </connections>
-                            </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQV-Vy-GzI">
-                                <rect key="frame" x="136" y="222" width="194" height="48"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Main Menu" id="1S5-lH-FZK">
-                                    <font key="font" metaFont="system" size="40"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRv-Rk-Sce">
-                                <rect key="frame" x="336" y="235" width="124" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Admin Password" drawsBackground="YES" usesSingleLineMode="YES" id="cZc-e9-yj8">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <allowedInputSourceLocales>
-                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
-                                    </allowedInputSourceLocales>
-                                </secureTextFieldCell>
-                            </secureTextField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Bm-k1-5mD">
-                                <rect key="frame" x="454" y="229" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TJZ-sw-0FU">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="adminEnter:" target="XfG-lQ-9wD" id="K7d-YR-mnP"/>
-                                </connections>
-                            </button>
-                        </subviews>
                     </view>
-                    <connections>
-                        <outlet property="adminPassword" destination="aRv-Rk-Sce" id="7qW-aJ-DJG"/>
-                    </connections>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="TnK-hq-uT8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="272" y="596"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zuq-U9-2oH">
+            <objects>
+                <viewController id="UC3-W4-ZWN" sceneMemberID="viewController">
+                    <view key="view" id="T4O-yz-TzD">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="UD1-Vf-DnD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="934"/>
         </scene>
     </scenes>
 </document>
