@@ -2,7 +2,7 @@
 __________________________________
 ## about the software
 
-chuck some `code` in like this;
+chuck some `code` for the main project in like this;
 
 ```swift
 var Fat = 10
