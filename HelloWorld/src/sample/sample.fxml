@@ -6,7 +6,8 @@
 <GridPane fx:controller="sample.SampleController"
           stylesheets="/sample/sample.css"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <Button text="Say 'Hello World' " onAction="#sayHelloWorld"/>
-    <Label GridPane.rowIndex="1" fx:id="helloWorld"/>
-    <Button text="Remove 'Hello World' " GridPane.rowIndex="5" onAction="#dontSayHelloWorld"/>
+    <Button text="Say 'Hello World' " onAction="#sayHelloWorld" alignment="CENTER"/>
+    <Label GridPane.rowIndex="1" fx:id="helloWorld" alignment="CENTER"/>
+    <Button text="Remove 'Hello World' " GridPane.rowIndex="5" onAction="#dontSayHelloWorld" alignment="CENTER"/>
+    <Label GridPane.columnIndex="3" fx:id="score" textFill="cyan"/>
 </GridPane>
