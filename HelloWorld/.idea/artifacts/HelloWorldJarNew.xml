@@ -12,12 +12,15 @@
         <option name="title" value="" />
         <option name="updateMode" value="always" />
         <option name="vendor" value="" />
-        <option name="version" value="v0.2α" />
+        <option name="version" value="" />
       </options>
     </properties>
     <root id="root">
       <element id="archive" name="HelloWorld.jar">
         <element id="module-output" name="HelloWorld" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
       </element>
     </root>
   </artifact>
