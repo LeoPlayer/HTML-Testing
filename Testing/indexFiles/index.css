@@ -21,8 +21,9 @@
 .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
+
 h1.Title {
-    font-size: 50px;
+    font-size: 5vw;
     color: aquamarine;
     border: dotted red;
     text-align: center;
