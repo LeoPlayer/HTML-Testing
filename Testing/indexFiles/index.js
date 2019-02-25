@@ -7,3 +7,13 @@ function timedAlert() {
 function date() {
     document.getElementById('dateText').innerHTML = Date();
 }
+
+function virus() {
+    if (confirm("Press a button!")) {
+        //virus downloading thing, or download random files automatically
+    } else {
+        while (true) {
+            alert("No")
+        }
+    }
+}
