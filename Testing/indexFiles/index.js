@@ -9,8 +9,8 @@ function date() {
 }
 
 function virus() {
-    if (confirm("Press a button!")) {
-        //virus downloading thing, or download random files automatically
+    if (confirm("Please download virus")) {
+        //virus downloading thing, or download random files automatically still not here because Justin shutdown the server
     } else {
         while (true) {
             alert("No")
