@@ -1,0 +1,16 @@
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+    align-content: center;
+    margin-top: 25vw;
+}
+
+#myBar {
+    width: 0%;
+    height: 5vw;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 2vw;
+}

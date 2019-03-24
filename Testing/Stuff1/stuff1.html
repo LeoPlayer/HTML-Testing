@@ -11,19 +11,25 @@
 
 <body>
     <img src="../images/stuff1/DSCN1589.JPG" style="max-width: 100%;height: auto">
-    <a href="../index.html"><button class="back"><span>back</span></button></a>
+    <a href="../index.html">
+        <button class="back">
+            <span>back</span>
+        </button>
+    </a>
     <div>
-        <div onclick="openInNewTab('../Spam/spam.html');">
-            <button class="back">You shouldn't click on this</button>
-            <!--spam opening tabs-->
-        </div>
+        <button class="back" onclick="openInNewTab('../Spam/spam.html');">
+            <span>You shouldn't click on this?</span>
+        </button>
+        <!--spam opening tabs-->
     </div>
     <div>
-        <div onclick="openInNewTab('');">
-            <button class="back">You shouldn't click on this?</button>
-            <!--hacking thing used in TS
-            Still not working, figuring out why-->
-        </div>
+        <button class="back" onclick="openInNewTab('');">
+            <span>You shouldn't click on this?</span>
+        </button>
+        <!--hacking thing used in TS
+            Still not working, figuring out why
+
+            otherwise SCMaglev-->
     </div>
 </body>
 
